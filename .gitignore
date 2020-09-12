@@ -1,0 +1,6 @@
+/Gradle-Testing/build/kotlin-build/
+/.idea/
+/Gradle-Testing/.gradle/
+/Gradle-Testing/.idea/
+.DS_Store
+git-testing.iml

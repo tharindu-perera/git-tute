@@ -1,0 +1,30 @@
+    sourceSets {
+        main {
+            java {
+                srcDirs 'src/main/java'
+                srcDirs '../serviceA/src/main/java'
+                srcDirs '../serviceC/src/main/java'
+            }
+            resources {
+                srcDir 'src/main/resources'
+            }
+    //        compileClasspath = sourceSets.main.runtimeClasspath
+        }
+    }
+
+//mainClassName = 'hello.HelloWorld'
+
+
+dependencies {
+ //    compile(files("$buildDir/classes") {
+//        builtBy("compile")
+//    })
+//    compile project(':serviceA')
+//    compile project(':serviceC')
+//    compile files('/Users/tharindu/IdeaProjects/Gradle-Testing/serviceA/build/libs/gs-gradle-0.1.0.jar')
+
+//    compile files("../serviceA")
+    compile "joda-time:joda-time:2.2"
+    testCompile "junit:junit:4.12"
+}
+
